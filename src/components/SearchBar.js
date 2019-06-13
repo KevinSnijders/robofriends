@@ -1,6 +1,7 @@
 import React from 'react';
 
 const SearchBar = ({searchChange}) => {
+	console.log("searchBar");
 	return (
 		<div className='pa2'>
 			<input
