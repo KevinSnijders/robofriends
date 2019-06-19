@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider, connect } from 'react-redux';
+import { Provider} from 'react-redux';
 import { createStore, applyMiddleware, combineReducers} from 'redux';
 import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
@@ -12,7 +12,7 @@ import 'tachyons';
 
 const logger = createLogger();
 const rootReducer = combineReducers({searchRobots, requestRobots});
-const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
 
 ReactDOM.render(
 	<Provider store={store}>
