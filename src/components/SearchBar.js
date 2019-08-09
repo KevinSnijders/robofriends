@@ -8,7 +8,7 @@ const SearchBar = ({searchChange}) => {
 				className='search__input'
 				type='search'
 				aria-label='search'
-				placeholder='search robots'
+				placeholder='Search robots'
 				onChange={searchChange}
 			/>
 			<span className="search__icon">
