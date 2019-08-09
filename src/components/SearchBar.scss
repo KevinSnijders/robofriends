@@ -1,0 +1,33 @@
+.search {
+  position: relative;
+  display: flex;
+  max-width: 30rem;
+  margin: 0 auto 2rem auto;
+  padding: .5rem;
+  input {
+    &::placeholder {
+      color: lightgrey;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid lightgrey;
+    box-shadow: .2rem .2rem .6rem 0 rgba(0, 0, 0, .2);
+    border-radius: 4px;
+  }
+
+  &__icon {
+    display: flex;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #F4AA07;
+    padding: .3rem .8rem;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,42 @@
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 67.5rem;
+  margin: 3.2rem auto 0;
+  padding: 0 0 3.2rem;
+
+  &__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #F4AA07;
+    font-weight: normal;
+  }
+
+  &--empty {
+    position: relative;
+    display: block;
+    text-align: center;
+
+    h1 {
+      font-weight: normal;
+      color: #F4AA07;
+    }
+  }
+
+  &__search {
+    font-size: 7.2rem;
+    color: #8E741D;
+    animation: rotcw 5s infinite linear;
+  }
+}
+
+@keyframes rotcw {
+  from {
+    transform: rotate(0deg) translate(1rem) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(1rem) rotate(-360deg);
+  }
+}

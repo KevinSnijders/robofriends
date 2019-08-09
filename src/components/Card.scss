@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff5ca;
+  margin: 0.5rem;
+  padding: .8rem .8rem 0;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  flex: 0 0 31.835%;
+  animation: fadein 2s;
+
+  &__info {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      margin: 0 0 .2rem 0;
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #8E741D;
+
+    }
+
+    p {
+      margin: 0;
+      color: #8e741dbd;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0;
+  }
+}

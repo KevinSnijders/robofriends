@@ -1,0 +1,23 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  border-bottom: 2.5px solid #F4AA07;
+
+  &__title {
+    color: #F4AA07;
+    font-size: 2.8rem;
+    padding: 1.2rem 0;
+    margin: 2.8rem 0 .8rem;
+    text-align: center;
+
+    &--highlight {
+      color: #8E741D;
+    }
+  }
+}
