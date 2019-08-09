@@ -1,16 +1,21 @@
 import React from 'react';
+import './SearchBar.scss';
 
 const SearchBar = ({searchChange}) => {
-	console.log("searchBar");
 	return (
-		<div className='pa2'>
+		<div className='search'>
 			<input
-				className='pa3 ba b--green bg-lightest-blue'
+				className='search__input'
 				type='search'
 				aria-label='search'
 				placeholder='search robots'
 				onChange={searchChange}
 			/>
+			<span className="search__icon">
+				<i className="material-icons">
+					search
+				</i>
+			</span>
 		</div>
 	);
 };

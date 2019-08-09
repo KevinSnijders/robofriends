@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import CardList from '../components/CardList';
 import SearchBar from '../components/SearchBar';
-import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
-import './MainPage.css';
+import './MainPage.scss';
 
 class MainPage extends Component {
 	componentDidMount() {
@@ -23,13 +22,16 @@ class MainPage extends Component {
 		return isPending ?
 			<h1>Loading</h1> :
 			(
-				<div className='tc'>
-					<SearchBar searchChange={onSearchChange}/>
-					<Scroll>
+				<div className='main'>
+					<div className="header">
+						<h1 className="header__title">Robo<span className="header__title--highlight">Friends</span></h1>
+						<SearchBar searchChange={onSearchChange}/>
+					</div>
+					<div className="content">
 						<ErrorBoundry>
 							<CardList robots={this.filterRobots()}/>
 						</ErrorBoundry>
-					</Scroll>
+					</div>
 				</div>
 			);
 	};
