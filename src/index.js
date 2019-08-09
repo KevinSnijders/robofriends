@@ -1,10 +1,11 @@
+import 'react-app-polyfill/ie11';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider} from 'react-redux';
 import { createStore, applyMiddleware, combineReducers} from 'redux';
 import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
-import './index.css';
+import './index.scss';
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 import {searchRobots, requestRobots} from './reducers';
