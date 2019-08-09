@@ -5,21 +5,21 @@ import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
 import './MainPage.css';
 
-
-
 class MainPage extends Component {
 	componentDidMount() {
 		this.props.onRequestRobots();
 	};
 
 	filterRobots = () => {
-		return this.props.robots.filter(robot => {
-			return robot.name.toLowerCase().includes(this.props.searchField.toLowerCase());
+		console.log(this.props);
+		let {robots, searchField} = this.props;
+		return robots.filter(robot => {
+			return robot.name.toLowerCase().includes(searchField.toLowerCase());
 		});
 	};
+
 	render() {
 		const {onSearchChange, isPending} = this.props;
-
 		return isPending ?
 			<h1>Loading</h1> :
 			(
@@ -27,7 +27,7 @@ class MainPage extends Component {
 					<SearchBar searchChange={onSearchChange}/>
 					<Scroll>
 						<ErrorBoundry>
-							<CardList robots={this.filterRobots}/>
+							<CardList robots={this.filterRobots()}/>
 						</ErrorBoundry>
 					</Scroll>
 				</div>
