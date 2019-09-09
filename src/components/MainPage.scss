@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #FCA66C;
-  background-image: linear-gradient(to bottom right, #53A79F, #74C875);
+  background-image: linear-gradient(to bottom right, rgb(143, 211, 244) 0%, rgb(132, 250, 176) 100%);
   font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
 }
 
 .header {

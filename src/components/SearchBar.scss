@@ -1,8 +1,8 @@
 .search {
   position: relative;
   display: flex;
-  max-width: 30rem;
-  margin: 0 auto 2rem auto;
+  max-width: 40rem;
+  margin: 0 auto;
   padding: .5rem;
   input {
     &::placeholder {
@@ -33,4 +33,8 @@
     transform: translateY(-50%);
     cursor: pointer;
   }
+}
+
+::placeholder {
+  color: #000;
 }

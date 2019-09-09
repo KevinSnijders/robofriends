@@ -6,28 +6,21 @@
   margin: 3.2rem auto 0;
   padding: 0 0 3.2rem;
 
-  &__title {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: #F4AA07;
-    font-weight: normal;
-  }
-
   &--empty {
     position: relative;
     display: block;
+    margin: 0 auto;
     text-align: center;
 
-    h1 {
-      font-weight: normal;
-      color: #F4AA07;
+    h2 {
+      color: #000;
+      font-weight: bold;
     }
   }
 
   &__search {
     font-size: 7.2rem;
-    color: #8E741D;
+    color: #000;
     animation: rotcw 5s infinite linear;
   }
 }

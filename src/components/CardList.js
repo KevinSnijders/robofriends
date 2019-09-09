@@ -22,10 +22,10 @@ const CardList = ({robots}) => {
 				</>
 			)
 			: <div className="cardlist--empty">
-				<h1>No robots found</h1>
 				<i className="material-icons cardlist__search">
 					search
 				</i>
+				<h2>No results found</h2>
 			</div>
 		}
 	</div>
