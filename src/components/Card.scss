@@ -58,10 +58,6 @@
       font-weight: 300;
       margin: 0.6rem 0;
       text-decoration: none;
-
-      &:hover {
-        color: #74C875;
-      }
     }
   }
 
@@ -85,7 +81,7 @@
       width: 50%;
 
       &:hover {
-        color: #53A79F;
+        color: #74C875;
       }
 
       &:first-child {
@@ -107,6 +103,13 @@
     }
 
     &__contact {
+
+    }
+  }
+
+  a {
+    &:hover {
+      color: #74C875;
 
     }
   }

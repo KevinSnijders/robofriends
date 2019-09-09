@@ -6,6 +6,7 @@ import facebook from '../assets/img/icons/facebook.png';
 import github from '../assets/img/icons/github.png';
 
 const Card = ({name, website, id}) => {
+    console.log(name);
     return (
         <div className='card fadein'>
             <div className="card__banner">
@@ -21,10 +22,10 @@ const Card = ({name, website, id}) => {
             </div>
             <div className="card__social">
                 <a target="_blank" rel="noopener noreferrer" href={"https://#"}>
-                    <img alt="twitter" src={facebook}/>
+                    <img alt="facebook" src={facebook}/>
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href={"https://#"}>
-                    <img alt="twitter" src={github}/>
+                    <img alt="github" src={github}/>
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href={"https://#"}>
                     <img alt="twitter" src={twitter}/>
