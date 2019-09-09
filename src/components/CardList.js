@@ -7,7 +7,6 @@ const CardList = ({robots}) => {
 		{(robots.length > 0) ?
 			(
 				<>
-					<h1 className="cardlist__title">List of robots:</h1>
 					{
 						robots.map((user, i) => {
 							return (

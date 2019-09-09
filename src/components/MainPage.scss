@@ -6,18 +6,24 @@
   height: 100vh;
 }
 
-.header {
-  border-bottom: 2.5px solid #F4AA07;
+body {
+  background-color: #FCA66C;
+  background-image: linear-gradient(to bottom right, #53A79F, #74C875);
+  font-family: 'Montserrat', sans-serif;
+}
 
+.header {
   &__title {
-    color: #F4AA07;
+    color: #333;
     font-size: 2.8rem;
-    padding: 1.2rem 0;
-    margin: 2.8rem 0 .8rem;
+    padding: 4rem 0 2.4rem;
+    margin: 0;
     text-align: center;
+    text-shadow: 1px 1px #fff;
 
     &--highlight {
-      color: #8E741D;
+      color: #fff;
+      text-shadow: 1px 1px #333;
     }
   }
 }
