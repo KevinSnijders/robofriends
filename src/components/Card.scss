@@ -11,6 +11,15 @@
   flex: 0 0 30.25%;
   animation: fadein 2s;
 
+  @media only screen and (max-width: 900px) {
+    flex: 0 0 47.5%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex: 0 0 90%;
+    margin: 0 5% 1.5rem;
+  }
+
   &__banner {
     border-radius: 5px 5px 0 0;
     overflow: hidden;
@@ -46,8 +55,7 @@
     width: 100%;
 
     h2 {
-      font-size: 1.6rem;
-      padding: 0 2rem;
+      font-size: 1.4rem;
       margin: 2.4rem 0 0 0;
     }
 
