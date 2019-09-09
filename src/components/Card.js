@@ -4,7 +4,6 @@ import image from '../assets/img/background.jpg';
 import twitter from '../assets/img/icons/twitter.png';
 
 const Card = ({name, website, id}) => {
-    console.log(website)
     return (
         <div className='card fadein grow'>
             <div className="card__image">
@@ -18,21 +17,21 @@ const Card = ({name, website, id}) => {
 
             <div className="card__robot-info">
                 <h2>{name}</h2>
-                <a target="_blank" rel="noopener noreferrer" href={website}>{website}</a>
+                <a target="_blank" rel="noopener noreferrer" href={`https://${website}`}>{website}</a>
             </div>
             <div className="card__social">
-                <a target="_blank" rel="noopener noreferrer" href="#">
+                <a target="_blank" rel="noopener noreferrer" href={"https://#"}>
                     <img alt="twitter" src={twitter}/>
                 </a>
             </div>
             <div className="card__link">
-                <a target="_blank" rel="noopener noreferrer" href="#" className="card__link__download">
+                <a className="card__link__download" target="_blank" rel="noopener noreferrer" href={"https://#"}>
                     <span>Download</span>
                     <i className="material-icons">
                         cloud_download
                     </i>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="#" className="card__link__contact">
+                <a className="card__link__contact" target="_blank" rel="noopener noreferrer" href={"https://#"}>
                     <span>Contact me</span>
                     <i className="material-icons">
                         send
