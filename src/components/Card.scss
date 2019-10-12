@@ -1,48 +1,142 @@
+
 .card {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: #fff5ca;
-  margin: 0.5rem;
-  padding: .8rem .8rem 0;
+  background-color: #f7f7f7;
+  margin: 0 auto 1.5rem;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-  flex: 0 0 31.835%;
+  border-radius: 5px;
+  flex: 0 0 30.25%;
   animation: fadein 2s;
 
-  &__info {
+  @media only screen and (max-width: 900px) {
+    flex: 0 0 47.5%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex: 0 0 90%;
+    margin: 0 5% 1.5rem;
+  }
+
+  &__banner {
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    position: relative;
     width: 100%;
+
+    &__image {
+      background-image: url("../assets/img/background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+      height: 220px;
+    }
+
+    &__robot {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: .5rem;
+      width: 100%;
+
+      img {
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__robot-info {
+    color: #000;
     text-align: center;
+    width: 100%;
 
     h2 {
-      margin: 0 0 .2rem 0;
+      font-size: 1.4rem;
+      margin: 2.4rem 0 0 0;
+    }
+
+    a {
+      display: block;
+      color: #53A79F;
       font-size: 1.2rem;
-      font-weight: normal;
-      color: #8E741D;
+      font-weight: 300;
+      margin: 0.6rem 0;
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    margin-top: .8rem;
+  }
+
+  &__link {
+    border-top: 1px solid #eee;
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+
+    a {
+      color: #000;
+      display: inline-block;
+      font-weight: 300;
+      padding: .8rem 0;
+      text-decoration: none;
+      width: 50%;
+
+      &:hover {
+        color: #74C875;
+      }
+
+      &:first-child {
+        border-right: 1px solid #eee;
+      }
+    }
+
+    span {
+      margin-right: .6rem;
+      vertical-align: middle
+    }
+
+    .material-icons {
+      vertical-align: middle;
+    }
+
+    &__download {
 
     }
 
-    p {
-      margin: 0;
-      color: #8e741dbd;
+    &__contact {
+
+    }
+  }
+
+  a {
+    &:hover {
+      color: #74C875;
+
     }
   }
 }
 
 @keyframes fadein {
   from {
-    opacity:0;
+    opacity: 0;
   }
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @keyframes fadeout {
   from {
-    opacity:1;
+    opacity: 1;
   }
   to {
-    opacity:0;
+    opacity: 0;
   }
 }

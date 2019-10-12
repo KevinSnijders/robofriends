@@ -7,7 +7,6 @@ const CardList = ({robots}) => {
 		{(robots.length > 0) ?
 			(
 				<>
-					<h1 className="cardlist__title">List of robots:</h1>
 					{
 						robots.map((user, i) => {
 							return (
@@ -23,10 +22,10 @@ const CardList = ({robots}) => {
 				</>
 			)
 			: <div className="cardlist--empty">
-				<h1>No robots found</h1>
 				<i className="material-icons cardlist__search">
 					search
 				</i>
+				<h2>No results found</h2>
 			</div>
 		}
 	</div>
